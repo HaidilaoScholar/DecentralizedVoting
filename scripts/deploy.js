@@ -1,14 +1,14 @@
 const hre = require("hardhat");
 
 async function main() {
-  const BlockchainVoting = await hre.ethers.getContractFactory(
-    "BlockchainVoting"
-  );
-  const contract = await BlockchainVoting.deploy();
+  const contractName = "BlockchainVoting";
 
-  await contract.deployed();
+  // deploy contract
+  const contractFactory = await hre.ethers.getContractFactory(contractName);
+  const contract = await contractFactory.deploy();
+  await contract.waitForDeployment();
+  console.log("Contract deployed to:", contract.target);
 
-  console.log(`ContractAddress : ${contract.address}`);
 }
 main().catch((error) => {
   console.error(error);
