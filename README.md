@@ -7,10 +7,7 @@ Technologies Used :
 - AxiomLedger Testnet: We utilize the AxiomLedger Testnet to develop and test our voting system. This allows us to simulate the behavior and functionality of the system in a controlled environment without using real cryptocurrencies or interacting with the main AxiomLedger network.
 - MetaMask: MetaMask serves as a user-friendly interface for interacting with our voting system. Users can connect their MetaMask wallets to the AxiomLedger Testnet and securely participate in the voting process. MetaMask provides a seamless and convenient experience for users to sign transactions and interact with the voting system.
 - Solidity: Solidity is the programming language used to write the smart contracts that power our voting system. It allows us to define the rules, conditions, and logic of the voting process. Solidity code is compiled into bytecode and executed on the AxiomLedger virtual machine, ensuring the transparent and accurate execution of votes.
-- Languages used
-  1. javascript.js
-  2. ether.js
-  3. solidity
+- Languages used：javascript.js, ether.js, solidity
 
 
 
@@ -18,43 +15,35 @@ Technologies Used :
 
 install all the package. 
 
-run 
+run  npm install npm install -g http-server
 
-npm install
+Then open vote ,run  http-server 
 
-npm install -g http-server
-
-Then open vote ,
-
-run 
-
-http-server 
-
-![image-20231202190250769](/Users/sceneryleo/Library/Application Support/typora-user-images/image-20231202190250769.png)
+![image-20231202190250769](picture/image-20231202190250769.png)
 
 localhost:8080
 
 homepage.html
 
-![image-20231202190822659](/Users/sceneryleo/Library/Application Support/typora-user-images/image-20231202190822659.png)
+![image-20231202190822659](picture/image-20231202190822659.png)
 
 login.html
 
-![image-20231202191021946](/Users/sceneryleo/Library/Application Support/typora-user-images/image-20231202191021946.png)
+![image-20231202191021946](picture/image-20231202191021946.png)
 
 
 
 creatBallot.html
 
-![image-20231202191638482](/Users/sceneryleo/Library/Application Support/typora-user-images/image-20231202191638482.png)
+![image-20231202191638482](picture/image-20231202191638482.png)
 
 vote.html
 
-![image-20231202191738844](/Users/sceneryleo/Library/Application Support/typora-user-images/image-20231202191738844.png)
+![image-20231202191738844](picture/image-20231202191738844.png)
 
 Voters.html
 
-![image-20231202191837481](/Users/sceneryleo/Library/Application Support/typora-user-images/image-20231202191837481.png)
+![image-20231202191837481](picture/image-20231202191837481.png)
 
 Voting is a fundamental democratic activity. Many experts believe that paper balloting is the only appropriate method to ensure everyone’s right to vote. But this method is prone to errors and abuse. Many nations utilize digital voting methods to solve the difficulties of paper balloting. A single flaw in digital voting may lead to massive vote-rigging. Election voting methods must be legal, accurate, safe, and convenient. However, issues with digital voting methods may restrict acceptance. Due to its end-to-end verification capabilities, blockchain technology was developed to address these problems. To guarantee We have used blockchain technology for anonymity, privacy, verifiability, mobility, integrity, security, and fairness in voting.
 
