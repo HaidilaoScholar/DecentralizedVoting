@@ -1,0 +1,133 @@
+.select-default-wrap {
+  height: fit-content;
+  position: relative;
+  width: 100%;
+}
+.select-default-wrap .select {
+  width: 100%;
+  min-height: 40px;
+  border: 0.0625rem solid #D8D6D5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.25rem 0.75rem;
+  background-color: #fff;
+}
+.select-default-wrap .select.search {
+  padding-left: 2.75rem;
+  position: relative;
+}
+.select-default-wrap .select.search::before {
+  position: absolute;
+  content: " ";
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/search.svg");
+  width: 24px;
+  height: 24px;
+  top: 6px;
+  left: 1rem;
+  filter: invert(53%) sepia(8%) saturate(80%) hue-rotate(335deg) brightness(93%) contrast(81%);
+}
+.select-default-wrap .select::after {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../assets/img/select-arrow.svg");
+  width: 12px;
+  height: 6px;
+  top: 17px;
+  right: 18px;
+}
+.select-default-wrap .select.active, .select-default-wrap .select:active, .select-default-wrap .select:focus {
+  border-color: #F48220;
+}
+.select-default-wrap .select.active::after {
+  transform: rotate(180deg);
+}
+.select-default-wrap .select.active ~ .select-list {
+  list-style-type: none;
+  margin-top: 4px;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  border: 0.0625rem solid #EAE9E9;
+  border-radius: 4px;
+  background-color: #fff;
+  max-height: 16.1rem;
+  height: fit-content;
+  overflow-y: scroll;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 4px;
+  z-index: 9999;
+}
+.select-default-wrap .select.error {
+  border-color: #EE3A3A;
+}
+.select-default-wrap .select-input {
+  min-width: 0.5rem;
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-size: 0.875rem;
+}
+.select-default-wrap .select-input::placeholder {
+  color: #A6A3A0;
+}
+.select-default-wrap .select-list {
+  height: 0px;
+  overflow: hidden;
+  margin: 0;
+}
+.select-default-wrap .select-list::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.select-default-wrap .select-list::-webkit-scrollbar-thumb {
+  background-color: #D8D6D5;
+  border-radius: 0.5rem;
+}
+.select-default-wrap .select-list li {
+  min-height: 2.5rem;
+  max-height: 2.5rem;
+  padding: 0 1.25rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: #2F2E2D;
+  cursor: pointer;
+  position: relative;
+}
+.select-default-wrap .select-list li.active {
+  pointer-events: none;
+}
+.select-default-wrap .select-list li:hover, .select-default-wrap .select-list li.active {
+  background-color: #FDFCFC;
+}
+.select-default-wrap .select-list li.disabled {
+  pointer-events: none;
+  background-color: #FAFAFA;
+  color: #BFBDBB;
+}
+.select-default-wrap .select-list .select-item.active::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../assets/img/check.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: invert(69%) sepia(83%) saturate(3613%) hue-rotate(348deg) brightness(100%) contrast(92%);
+}
